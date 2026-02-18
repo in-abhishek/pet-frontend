@@ -54,7 +54,7 @@ The user interface for the Pet Adoption System, built with **React**, **TypeScri
 
 1. **Clone the repository:**
 ```bash
-git clone <your-frontend-repo-url>
+git clone <https://github.com/in-abhishek/pet-frontend.git>
 cd frontend
 
 ```
