@@ -7,7 +7,7 @@ const Header = () => {
   const navigate = useNavigate()
   const { execute: logoutExecute } = usePost<null, any>("/logout");
   const handleLogout = () => {
-    logoutExecute({}, {
+    logoutExecute(null, {
       credentials: "include",
       onSuccess: () => {
         setAccessToken("");

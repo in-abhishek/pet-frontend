@@ -7,7 +7,6 @@ import InputSearch from '../components/input-search/InputSearch';
 import { useAuth } from '../context/Context';
 import Button from '../components/core/button';
 import AlertToast from '../components/toast/AlertToast';
-import FilterSearch from '../components/input-search/FilterSearch';
 import { useState } from 'react';
 
 
