@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+@theme {
+  --color-primary: #2563eb;
+  --color-secondary: #1e293b;
+  --color-background: #F9FAFB;
+  --color-primaryLogo: #3B83F6;
+  --color-text-secondary: #111928;
+  --color-text-content: #6B7280;
+  --color-border: #D1D5DB;
+  --color-input-background: #F9FAFB;
+  --color-btn-border: #E5E7EB;
+  --color-error: #F05252;
+  --color-text-primary: #1E429F;
+  --color-text-background: #E1EFFE;
+  --shadow-toast: 0 1px 3px 0 rgba(0, 0, 0, 0.10),
+    0 1px 2px -1px rgba(0, 0, 0, 0.10);
+
+}
+
+html {
+  font-size: 14px;
+
+  @media (min-width: 1921px) {
+    font-size: 130%;
+  }
+
+  @media (max-width: 1639px) and (min-width: 1320px) {
+    font-size: 90%;
+  }
+
+  @media (min-width: 1023px) and (max-width: 1638px) {
+    font-size: 80%;
+
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 60%;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 100%;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h5,
+h4,
+h6,
+p {
+  font-size: initial;
+}
+.bg-success,
+.btn-success,.bg-warning,.btn-primary,.bg-danger,
+.btn-danger{
+  @apply cursor-pointer
+}
+.bg-success,
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.bg-warning {
+  background-color: #ffc107;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bg-danger,
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
