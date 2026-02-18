@@ -44,7 +44,7 @@ export const Input: React.FC<InputProps> = ({
   }, [value]);
 
   return (
-    <div>
+    <div className="flex-1">
       {label && (
         <label htmlFor={id} className="block text-base font-medium text-text-secondary mb-1.5">
           {label}

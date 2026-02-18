@@ -51,7 +51,7 @@ const Register = () => {
       )}
 
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
-        <div className="flex gap-4">
+        <div className="flex gap-4 w-full">
           <Controller
             name="firstName"
             control={control}
